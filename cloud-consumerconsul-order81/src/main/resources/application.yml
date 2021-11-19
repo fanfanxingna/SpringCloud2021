@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cloudconsumerconsulorder
+  cloud:
+    consul:
+      discovery:
+        service-name: ${spring.application.name}
+      host: localhost
+      port: 8500
+server:
+  port: 81
